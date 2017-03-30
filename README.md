@@ -1,7 +1,7 @@
 # app-dashboard
 
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.16.0.
+version 0.0.2.
 
 ## Build & development
 

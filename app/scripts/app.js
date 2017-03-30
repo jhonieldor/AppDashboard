@@ -25,6 +25,10 @@ angular
         templateUrl: 'views/ultradashboard.html',
         controller: 'UltradashboardCtrl'
       })
+      .when('/about', {
+        templateUrl: 'views/about.html',
+        controller: 'AboutCtrl'
+      })
       .otherwise({
         redirectTo: '/ultradashboard'
       });
