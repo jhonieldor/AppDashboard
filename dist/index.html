@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="stylesheet" href="styles/vendor.01539feb.css">
+  <link rel="stylesheet" href="styles/main.d20541e6.css">
+</head>
+  <body ng-app="ultraBI" ng-controller="MainCtrl">
+      <nav class="navbar navbar-inverse" role="navigation" ng-cloak>
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle"
+                    data-toggle="collapse" data-target="#main-nav">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Ultra BI</a>
+          </div>
+          <!–– Collect the nav links and other content for toggling ––>
+          <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="nav navbar-nav navbar-right">
+              <!–– [2] Add active class to necessary item ––>
+              <li ng-class="{active: activeView === 'ultradashboard'}">
+                <a href="/#/ultradashboard">Ultra Dashboard</a>
+              </li>
+              </li>
+            </ul>
+          </div>
+          <!–– /.navbar-collapse ––>
+        </div>
+        <!–– /.container-fluid ––>
+      </nav>
+      <!–– Main container ––>
+      <div class="container-fluid" id="main">
+        <div ng-view=""></div>
+        <div class="footer">
+          <p>Powered by Ultra Sistemas</span></p>
+        </div>
+      </div>
+      <script src="scripts/vendor.85c5015e.js"></script>
+
+      <!-- build:js({.tmp,app}) scripts/scripts.js -->
+      <script src="scripts/app.js"></script>
+      <script src="scripts/controllers/main.js"></script>
+      <script src="scripts/services/vendas-service.js"></script>
+      <script src="scripts/services/filiais-service.js"></script>
+      <script src="scripts/services/clientes-service.js"></script>
+      <script src="scripts/controllers/ultradashboard.js"></script>
+      <script src="scripts/controllers/about.js"></script>
+      <!-- endbuild -->
+  </body>
+</html>
