@@ -27,29 +27,22 @@
             </button>
             <a class="navbar-brand" href="/">Ultra BI</a>
           </div>
-          <!–– Collect the nav links and other content for toggling ––>
           <div class="collapse navbar-collapse" id="main-nav">
             <ul class="nav navbar-nav navbar-right">
-              <!–– [2] Add active class to necessary item ––>
               <li ng-class="{active: activeView === 'ultradashboard'}">
                 <a href="/#/ultradashboard">Ultra Dashboard</a>
               </li>
               </li>
             </ul>
           </div>
-          <!–– /.navbar-collapse ––>
         </div>
-        <!–– /.container-fluid ––>
       </nav>
-      <!–– Main container ––>
       <div class="container-fluid" id="main">
         <div ng-view=""></div>
         <div class="footer">
           <p>Powered by Ultra Sistemas</span></p>
         </div>
       </div>
-      <!-- build:js(.) scripts/vendor.js -->
-      <!-- bower:js -->
       <script src="bower_components/jquery/dist/jquery.js"></script>
       <script src="bower_components/angular/angular.js"></script>
       <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
