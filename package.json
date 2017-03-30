@@ -1,7 +1,9 @@
 {
   "name": "appdashboard",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "express": "4.15.2"
+  },
   "repository": {},
   "devDependencies": {
     "grunt": "^0.4.5",
