@@ -7,7 +7,7 @@
  * # AboutCtrl
  * Controller of the appDashboardApp
  */
-angular.module('appDashboardApp')
+angular.module('ultraBI')
   .controller('AboutCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',

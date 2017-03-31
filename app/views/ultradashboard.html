@@ -94,12 +94,12 @@
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <a class="btn" data-toggle="collapse" data-target="#democontent"><span
-      class="glyphicon glyphicon-filter"></span></a>
+    <a class="btn" data-toggle="collapse" ><span
+      class="glyphicon glyphicon-dashboard"></span></a>
     Dashboard Ultra
   </div>
   <div class="panel-body">
-    <div ng-if="filterActivated" class="animationIf">
+    <div class="animationIf">
       <nav class="navbar navbar">
         <div class="container-fluid">
           <!--<button class="btn btn-danger navbar-btn">Button</button>-->
@@ -107,11 +107,21 @@
           <div class="navbar-header">
             <a class="navbar-brand" data-toggle="collapse" data-target="#democontent"><span
               class="glyphicon glyphicon-filter"></span></a>
-            <a class="navbar-brand">Filtros de Vendas</a>
+
+            <a class="navbar-brand">Filtros</a>
           </div>
           <ul class="nav navbar-nav">
+            <li class="navbar-left" role="presentation">
+              <a class="navbar-right" data-toggle="collapse" data-target="#democontent"><span
+                class="glyphicon glyphicon-refresh"></span>Resetar</a>
+              <a class="navbar-right" data-toggle="collapse" data-target="#democontent"><span
+                class="glyphicon glyphicon-plus"></span>Adicionar Filtro</a>
+            </li>
+
+
             <li ng-if="filiaisFiltradas.length" role="presentation" class="active">
-              <a data-toggle="collapse" data-target="#painel">Filiais Filtradas</a>
+
+              <a data-toggle="collapse" data-target="#painel">Filiais</a>
 
               <div id="painel" class="collapse">
                 <ul class="nav nav-stacked">
@@ -124,7 +134,7 @@
 
             </li>
             <li ng-if="periodosAnuaisFiltrados.length" role="presentation" class="active">
-              <a data-toggle="collapse" data-target="#painelMb">Anos Filtrados</a>
+              <a data-toggle="collapse" data-target="#painelMb">Anos</a>
 
               <div id="painelMb" class="collapse">
                 <ul class="nav nav-stacked">
@@ -136,10 +146,27 @@
               </div>
             </li>
           </ul>
-          <div class="navbar-right">
-            <button class="btn btn-default navbar-btn" ng-click="limparFiltros()"><span
-              class="glyphicon glyphicon-refresh"></span></button>
-          </div>
+          <!--<div class="navbar-right">-->
+          <!--<button class="btn btn-default navbar-btn" ng-click="limparFiltros()"><span-->
+          <!--class="glyphicon glyphicon-refresh"></span></button>-->
+          <!--</div>-->
+          <!--<div class="navbar-right">-->
+            <!--<div class="dropdown navbar-right" >-->
+              <!--<button style="width: 130px" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"-->
+                      <!--aria-haspopup="true" aria-expanded="true">-->
+                <!--Opções-->
+                <!--<span class="caret"></span>-->
+              <!--</button>-->
+              <!--<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">-->
+                <!--<li><a href="#">Adicionar Filtro</a></li>-->
+                <!--<li><a href="#">Another action</a></li>-->
+                <!--<li><a href="#">Something else here</a></li>-->
+                <!--<li role="separator" class="divider"></li>-->
+                <!--<li><a href="#">Separated link</a></li>-->
+              <!--</ul>-->
+            <!--</div>-->
+          <!--</div>-->
+
 
         </div>
       </nav>
@@ -334,8 +361,6 @@
 
 
           </div>
-
-
 
 
         </div>
